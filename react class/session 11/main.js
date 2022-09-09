@@ -5,11 +5,13 @@ const getName=()=>{
             resolve();
         }
         else{
-            reject()
+            reject();
         }
     })
 }
 
 getName()
-.then(()=>console.log("succes"))
-.catch((err)=>console.log("err"))
+    .then(()=>console.log("success"))
+    .catch((err)=>{
+        console.log("err");
+    })
