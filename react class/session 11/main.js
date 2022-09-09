@@ -1,5 +1,5 @@
 const getName=()=>{
-    let num=1
+    let num=0
     return new Promise((resolve, reject) => {
         if(num){
             resolve();
