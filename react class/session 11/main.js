@@ -1,19 +1,16 @@
-const getName=()=>{
-    let num=0
-    return new Promise((resolve, reject) => {
-        if(num){
-            resolve();
-        }
-        else{
-            reject();
-        }
-    })
-}
+const getName = () => {
+  let num = 0;
+  return new Promise((resolve, reject) => {
+    if (num) {
+      resolve();
+    } else {
+      reject();
+    }
+  });
+};
 
 getName()
-    .then(()=>console.log("success"))
-    .catch((err)=>{
-        console.log("err");
-    })
-
-// remove git from vscode
+  .then(() => console.log("success"))
+  .catch((err) => {
+    console.log("err");
+  });

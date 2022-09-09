@@ -1,33 +1,28 @@
-const username="Deepak"
-const password="deepak"
+const username = "Deepak";
+const password = "deepak";
 
-const idpass=document.getElementsByName('password')
-const iduser=document.getElementsByName('username')
+const idpass = document.getElementsByName("password");
+const iduser = document.getElementsByName("username");
 
-function check(event)
-{
-    event.preventDefault();
-    run()
-}
+function check(event) {
+  event.preventDefault();
+  const credentialcheck = (username, password, iduser, idpass) => {
+    return new Promise((resolve, reject) => {
+      if (iduser[0].value == username) {
+        if (idpass[0].value == password) {
+          resolve("success");
+        }
+      } else {
+        reject();
+      }
+    });
+  };
 
-function run()
-{
-    const credentialcheck=()=>{ 
-        new Promise((resolve, reject) => {
-            if(iduser[0].value==username){
-                resolve();
-            }
-            else{
-                reject
-            }
-        })
-    }
-    
-    credentialcheck()
-        .then(()=>console.log("success"))
-        .catch((err)=>{
-        console.log("err");
+  credentialcheck(username, password, iduser, idpass)
+    .then((x) => {
+      console.log(x);
     })
+    .catch((err) => {
+      console.log("err");
+    });
 }
-
-
