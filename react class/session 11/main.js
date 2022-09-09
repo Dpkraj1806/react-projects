@@ -15,3 +15,5 @@ getName()
     .catch((err)=>{
         console.log("err");
     })
+
+// remove git from vscode
