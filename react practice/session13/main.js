@@ -69,11 +69,17 @@
     //Import --> 
                 // we import  default export like this "import export_name from "file path"  "
                 // we import normal export like this  " import {export name} from "filepath" "
-import {age,gender} from "./test.js"
+// import {age,gender} from "./test.js"
 
 // console.log(`My name is ${name}`);
 // console.log(`My name is ${age}`);
 // console.log(`My name is ${gender}`);
 
 
+// Spread operator
+
+// var arr=[1,2,3,4,5]
+// var arr1=[...arr] // when a array is deconstruct by spread operator and assigned into a anther variable, the value only passed.
+// arr1.push(6)
+// console.log(arr,arr1)//So if we change anything in the second array doesn't change the first array.
 
